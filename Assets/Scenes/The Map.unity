@@ -336,10 +336,6 @@ Transform:
   m_Children:
   - {fileID: 293854477}
   - {fileID: 1868000541}
-  - {fileID: 2135346913}
-  - {fileID: 1148424429}
-  - {fileID: 1909587822}
-  - {fileID: 1932289466}
   - {fileID: 1598855243}
   - {fileID: 1038163662}
   - {fileID: 253869019}
@@ -1820,6 +1816,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 293854477}
+  - component: {fileID: 293854478}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1851,6 +1848,89 @@ Transform:
   - {fileID: 1272912126}
   m_Father: {fileID: 50663799}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &293854478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 293854476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f6bf3d943ac7945842268c9ef1dca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.Teleportation.TeleportationArea
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 2147483648
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 1
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+  m_TeleportationProvider: {fileID: 0}
+  m_MatchOrientation: 0
+  m_MatchDirectionalInput: 0
+  m_TeleportTrigger: 0
+  m_FilterSelectionByHitNormal: 0
+  m_UpNormalToleranceDegrees: 30
+  m_Teleporting:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &307127816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5691,7 +5771,7 @@ Transform:
   - {fileID: 236373570}
   - {fileID: 1692099330}
   - {fileID: 1067414657}
-  m_Father: {fileID: 50663799}
+  m_Father: {fileID: 1868000541}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &1152394077 stripped
 Transform:
@@ -8822,7 +8902,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2135346913}
+  - {fileID: 1148424429}
+  - {fileID: 1909587822}
+  - {fileID: 1932289466}
   m_Father: {fileID: 50663799}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1904896292
@@ -8984,7 +9068,7 @@ Transform:
   - {fileID: 99644445}
   - {fileID: 1200993862}
   - {fileID: 2024044398}
-  m_Father: {fileID: 50663799}
+  m_Father: {fileID: 1868000541}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &1932289465
 GameObject:
@@ -9019,7 +9103,7 @@ Transform:
   - {fileID: 751689031}
   - {fileID: 1980309757}
   - {fileID: 1349163547}
-  m_Father: {fileID: 50663799}
+  m_Father: {fileID: 1868000541}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1001 &1933831194
 PrefabInstance:
@@ -9847,7 +9931,7 @@ Transform:
   - {fileID: 1933831195}
   - {fileID: 1287609832}
   - {fileID: 146801420}
-  m_Father: {fileID: 50663799}
+  m_Father: {fileID: 1868000541}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2142819621
 GameObject:

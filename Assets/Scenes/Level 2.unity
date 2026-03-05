@@ -7900,6 +7900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e8ee63d81649a429f6296803f515a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DualSocketSceneLoader
+  playerRoot: {fileID: 1848126820}
   sceneName: Level 3
 --- !u!1001 &1349338392
 PrefabInstance:

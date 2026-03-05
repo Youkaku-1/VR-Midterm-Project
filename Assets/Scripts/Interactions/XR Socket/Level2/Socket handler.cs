@@ -3,6 +3,9 @@ using UnityEngine.SceneManagement;
 
 public class DualSocketSceneLoader : MonoBehaviour
 {
+    [Header("Player Settings")]
+    [SerializeField] private Transform playerRoot;  
+
     [Header("Scene Settings")]
     [SerializeField] private string sceneName;
 
@@ -26,10 +29,16 @@ public class DualSocketSceneLoader : MonoBehaviour
 
     private void CheckBoth()
     {
-        if (socket1Filled && socket2Filled)
+    if (socket1Filled && socket2Filled)
+    {
+        if (playerRoot != null)
         {
-            Debug.Log($"Both sockets filled. Loading scene '{sceneName}'...");
-            SceneManager.LoadScene(sceneName);
+            // Resets X and Z to 0, keeps Y the same
+            playerRoot.position = new Vector3(0, playerRoot.position.y, 0);
         }
+
+        Debug.Log($"Both sockets filled. Loading scene '{sceneName}'...");
+        SceneManager.LoadScene(sceneName);
+    }
     }
 }

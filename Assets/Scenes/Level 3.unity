@@ -4889,12 +4889,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 850443289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c81863fab5ec8b4fb49d177afd95abc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1521633f220470b4f9a4402661512ede, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::KeyShine
-  skullLight: {fileID: 0}
-  maxRange: 3
-  shineSpeed: 2
+  m_EditorClassIdentifier: Assembly-CSharp::KeyReveal
+  hiddenColor: {r: 0.24705882, g: 0.23529412, b: 0.23529412, a: 0}
+  revealedColor: {r: 0.30588236, g: 0.9882353, b: 0.92156863, a: 0}
+  transitionSpeed: 3
 --- !u!1 &863341128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4922,7 +4922,7 @@ Transform:
   m_GameObject: {fileID: 863341128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.627, z: 5.94}
+  m_LocalPosition: {x: 0, y: 1.627, z: 5.874}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7982,7 +7982,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de467a6c1c04f6f4cb790d6836bf69cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PokeToggleInteractable
-  rotationAmount: 14
   objectsToDisable:
   - {fileID: 560279581}
   - {fileID: 1904896292}
@@ -8082,11 +8081,26 @@ MonoBehaviour:
   m_PokeConfiguration:
     m_UseConstant: 1
     m_ConstantValue:
-      m_PokeDirection: 3
+      m_PokeDirection: 6
       m_InteractionDepthOffset: 0
       m_EnablePokeAngleThreshold: 1
-      m_PokeAngleThreshold: 45
+      m_PokeAngleThreshold: 0
     m_Variable: {fileID: 0}
+--- !u!114 &1468679569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468679559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6360d5c1c1b5fc42b2e2aa77c21f74e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokeAnimationToggle
+  animator: {fileID: 1223129186}
+  lightsOffClip: {fileID: 7400000, guid: 5c8c9012a427b1d45b370e84b5e49907, type: 2}
+  lightsOnClip: {fileID: 7400000, guid: 7ca1760fb4deb0449b38f2492855e6c5, type: 2}
 --- !u!1001 &1481153388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9168,6 +9182,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3412490865912514635, guid: 5e0aa061218e946c79c9508cd99f9da9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1468679563}
+    - targetCorrespondingSourceObject: {fileID: 3412490865912514635, guid: 5e0aa061218e946c79c9508cd99f9da9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1468679569}
   m_SourcePrefab: {fileID: 100100000, guid: 5e0aa061218e946c79c9508cd99f9da9, type: 3}
 --- !u!1001 &1677450167
 PrefabInstance:
@@ -10563,6 +10580,10 @@ GameObject:
   - component: {fileID: 1959279143}
   - component: {fileID: 1959279145}
   - component: {fileID: 1959279144}
+  - component: {fileID: 1959279148}
+  - component: {fileID: 1959279147}
+  - component: {fileID: 1959279146}
+  - component: {fileID: 1959279149}
   m_Layer: 0
   m_Name: UV
   m_TagString: Untagged
@@ -10579,7 +10600,7 @@ Transform:
   m_GameObject: {fileID: 1959279142}
   serializedVersion: 2
   m_LocalRotation: {x: 0.12615687, y: -0, z: -0, w: 0.9920103}
-  m_LocalPosition: {x: 0, y: 0.2145, z: -0.0816}
+  m_LocalPosition: {x: 0, y: 0.1825, z: 0.047}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10679,6 +10700,79 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1959279146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959279142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e4536f1baae2441b17419c37f7fc0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlashlightTrigger
+--- !u!114 &1959279147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959279142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f593f0b2bf8a25488a634cc32124abc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpotlightCollider
+--- !u!64 &1959279148
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959279142}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!54 &1959279149
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959279142}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1978253093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11139,7 +11233,7 @@ PrefabInstance:
     - target: {fileID: 987563202597444953, guid: 3c805651312f8df458236159ba9fffb2, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9269555b495027d4f936d5923f0e35d1, type: 2}
+      objectReference: {fileID: 2100000, guid: c9117f61699db864e8013f754c11f72d, type: 2}
     - target: {fileID: 1772312428060593166, guid: 3c805651312f8df458236159ba9fffb2, type: 3}
       propertyPath: m_Name
       value: KeyPivot

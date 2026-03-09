@@ -32,6 +32,7 @@ public class SpawnAtHandOnActivate : MonoBehaviour
             if (handAttach != null)
             {
                 Instantiate(itemPrefab, handAttach.position, handAttach.rotation);
+                SoundManager.Instance.Play("NaratorLvl1-4");
                 return;
             }
         }

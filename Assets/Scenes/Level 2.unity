@@ -4447,6 +4447,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &725059506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725059499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7692bc92b686c49b293992e43a2c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabSound
+  soundName: NaratorLvl2-2
+  playOnce: 1
 --- !u!1 &751415964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5686134208185362930, guid: 1fd3a7c43c8190f4d8c167ebde694364, type: 3}
@@ -7713,6 +7727,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1693640182052832, guid: 2eef898469931f046b6e26f459d116ff, type: 3}
       insertIndex: -1
       addedObject: {fileID: 725059503}
+    - targetCorrespondingSourceObject: {fileID: 1693640182052832, guid: 2eef898469931f046b6e26f459d116ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 725059506}
   m_SourcePrefab: {fileID: 100100000, guid: 2eef898469931f046b6e26f459d116ff, type: 3}
 --- !u!1 &1349163546
 GameObject:

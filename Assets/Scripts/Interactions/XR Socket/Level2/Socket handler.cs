@@ -9,6 +9,9 @@ public class DualSocketSceneLoader : MonoBehaviour
     [Header("Scene Settings")]
     [SerializeField] private string sceneName;
 
+    [Header("Scene Data")]
+    [SerializeField] private SceneData sceneData;
+
     private bool socket1Filled = false;
     private bool socket2Filled = false;
 
@@ -29,16 +32,18 @@ public class DualSocketSceneLoader : MonoBehaviour
 
     private void CheckBoth()
     {
-    if (socket1Filled && socket2Filled)
-    {
-        if (playerRoot != null)
+        if (socket1Filled && socket2Filled)
         {
-            // Resets X and Z to 0, keeps Y the same
-            playerRoot.position = new Vector3(0, playerRoot.position.y, 0);
-        }
+            if (playerRoot != null)
+            {
+                playerRoot.position = new Vector3(0, playerRoot.position.y, 0);
+            }
 
-        Debug.Log($"Both sockets filled. Loading scene '{sceneName}'...");
-        SceneManager.LoadScene(sceneName);
-    }
+            if (sceneData != null)
+                sceneData.sceneIndex = sceneName;
+
+            Debug.Log($"Both sockets filled. Loading scene '{sceneName}'...");
+            SceneManager.LoadScene(sceneName);
+        }
     }
 }

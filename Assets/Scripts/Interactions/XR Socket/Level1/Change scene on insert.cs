@@ -5,8 +5,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class LoadSceneOnInsert : MonoBehaviour
 {
     [Header("Scene Settings")]
-    [Tooltip("Name of the scene to load when an object is inserted")]
     [SerializeField] private string sceneName;
+
+
+    [Header("Scene Data")]
+    [SerializeField] private SceneData sceneData;
 
     private UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
 
@@ -32,6 +35,9 @@ public class LoadSceneOnInsert : MonoBehaviour
             Debug.LogWarning("Scene name is not set in the Inspector.");
             return;
         }
+
+        if (sceneData != null)
+            sceneData.sceneIndex = sceneName;
 
         Debug.Log($"Object inserted. Loading scene '{sceneName}'...");
         SceneManager.LoadScene(sceneName);

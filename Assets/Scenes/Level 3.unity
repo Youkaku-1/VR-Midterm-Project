@@ -7725,6 +7725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadSceneOnInsert
   sceneName: End Screen
+  sceneData: {fileID: 11400000, guid: 81e1d7e04d65bd54fb1e3c428e1c3f0e, type: 2}
 --- !u!114 &1349163555
 MonoBehaviour:
   m_ObjectHideFlags: 0

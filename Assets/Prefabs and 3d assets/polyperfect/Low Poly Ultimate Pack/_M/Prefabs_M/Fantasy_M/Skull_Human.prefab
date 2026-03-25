@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 33000014241312364}
   - component: {fileID: 23000013179223578}
   - component: {fileID: 135000010342493916}
-  - component: {fileID: 6214597425987250925}
-  - component: {fileID: 6734325690504217963}
   - component: {fileID: 4299843437642176713}
+  - component: {fileID: 7971284210987446130}
+  - component: {fileID: 8324787114866505719}
+  - component: {fileID: 3411284324834346530}
   m_Layer: 0
   m_Name: Skull_Human
   m_TagString: Untagged
@@ -117,7 +118,28 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.18649183
   m_Center: {x: 0, y: 0.14370508, z: 0.03563142}
---- !u!54 &6214597425987250925
+--- !u!65 &4299843437642176713
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011610838926}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.31916466, y: 0.37010443, z: 0.4662296}
+  m_Center: {x: 0.000000018916236, y: 0.17963159, z: -0.044539288}
+--- !u!54 &7971284210987446130
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,8 +165,8 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 3
---- !u!114 &6734325690504217963
+  m_CollisionDetection: 0
+--- !u!114 &8324787114866505719
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,7 +295,7 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!65 &4299843437642176713
+--- !u!65 &3411284324834346530
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -292,8 +314,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31916466, y: 0.37010443, z: 0.4662296}
-  m_Center: {x: 0.000000018916236, y: 0.17963159, z: -0.044539288}
+  m_Size: {x: 0.31916463, y: 0.37010443, z: 0.4662296}
+  m_Center: {x: 0.000000014901161, y: 0.17963135, z: -0.044539288}
 --- !u!1 &5078316996787206686
 GameObject:
   m_ObjectHideFlags: 0

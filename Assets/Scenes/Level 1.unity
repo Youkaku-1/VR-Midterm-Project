@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -603,9 +603,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -647,7 +647,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -742,7 +742,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 886048482}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -1715,6 +1715,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4726310393430634, guid: 50b2e5fd8eded46eca98333d455a2618, type: 3}
   m_PrefabInstance: {fileID: 258647999}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &263115370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1053862967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &265111227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2270,7 +2275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RightHandMoveInput.m_InputSourceMode
@@ -3049,6 +3054,11 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3648456288937139874, guid: 310dbed1364cf5d49bc3db7e3c371aa4, type: 3}
   m_PrefabInstance: {fileID: 1241761657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &564856361 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 867105688}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &599605783 stripped
 GameObject:
@@ -4314,7 +4324,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 564856361}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -4583,7 +4593,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 263115370}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -4686,6 +4696,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31916466, y: 0.37010443, z: 0.4662296}
   m_Center: {x: 0.000000018916236, y: 0.17963159, z: -0.044539288}
+--- !u!4 &886048482 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1349338392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &894259493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5327,7 +5342,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1933919927}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -9419,9 +9434,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -9463,7 +9478,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -9694,9 +9709,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -9738,7 +9753,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -9845,6 +9860,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4186950865177770, guid: 7099c2abfe33541ed87e5a2edd524441, type: 3}
   m_PrefabInstance: {fileID: 1933831194}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1933919927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1990157948}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1944963732
 PrefabInstance:

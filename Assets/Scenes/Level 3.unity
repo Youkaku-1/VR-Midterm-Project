@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -755,7 +755,7 @@ Transform:
   m_GameObject: {fileID: 135496160}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.32999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -801,10 +801,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 0.86019933, b: 0.64716977, a: 1}
-  m_Intensity: 96.02
-  m_Range: 4
-  m_SpotAngle: 97.37806
-  m_InnerSpotAngle: 18.436419
+  m_Intensity: 188.55
+  m_Range: 10.1
+  m_SpotAngle: 178.99998
+  m_InnerSpotAngle: 0
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -843,7 +843,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -939,7 +939,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1349338393}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -1609,6 +1609,7 @@ GameObject:
   - component: {fileID: 212045726}
   - component: {fileID: 212045728}
   - component: {fileID: 212045727}
+  - component: {fileID: 212045729}
   m_Layer: 0
   m_Name: wall massage (2)
   m_TagString: Untagged
@@ -1643,7 +1644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &212045728
 MonoBehaviour:
@@ -1673,6 +1673,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &212045729
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212045725}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &222456340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1808,6 +1829,7 @@ GameObject:
   - component: {fileID: 233173501}
   - component: {fileID: 233173503}
   - component: {fileID: 233173502}
+  - component: {fileID: 233173504}
   m_Layer: 0
   m_Name: wall massage (1)
   m_TagString: Untagged
@@ -1842,7 +1864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &233173503
 MonoBehaviour:
@@ -1872,6 +1893,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &233173504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233173500}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &236373569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3445,10 +3487,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 0.86019933, b: 0.64716977, a: 1}
-  m_Intensity: 96.02
-  m_Range: 4
-  m_SpotAngle: 97.37806
-  m_InnerSpotAngle: 18.436419
+  m_Intensity: 188.55
+  m_Range: 10.1
+  m_SpotAngle: 178.99998
+  m_InnerSpotAngle: 0
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -3487,7 +3529,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -3508,7 +3550,7 @@ Transform:
   m_GameObject: {fileID: 560279581}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4841,7 +4883,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 867105689}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -4975,6 +5017,7 @@ GameObject:
   - component: {fileID: 863341129}
   - component: {fileID: 863341131}
   - component: {fileID: 863341130}
+  - component: {fileID: 863341132}
   m_Layer: 0
   m_Name: wall massage
   m_TagString: Untagged
@@ -5009,7 +5052,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &863341131
 MonoBehaviour:
@@ -5039,6 +5081,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &863341132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863341128}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &865030668 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 989436785522029447, guid: c7a7981b3260e22439639782762801cb, type: 3}
@@ -5126,6 +5189,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 849944851}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &867105689 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 867105688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &870077422 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000012473522204, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
@@ -5734,7 +5802,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1990157949}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -7752,6 +7820,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 139913163}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &1349338393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1349338392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1388077379
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8807,6 +8880,7 @@ GameObject:
   - component: {fileID: 1614608306}
   - component: {fileID: 1614608308}
   - component: {fileID: 1614608307}
+  - component: {fileID: 1614608309}
   m_Layer: 0
   m_Name: wall massage (3)
   m_TagString: Untagged
@@ -8841,7 +8915,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &1614608308
 MonoBehaviour:
@@ -8871,6 +8944,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &1614608309
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614608305}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1618484066
 GameObject:
   m_ObjectHideFlags: 0
@@ -9063,6 +9157,7 @@ GameObject:
   - component: {fileID: 1664112831}
   - component: {fileID: 1664112833}
   - component: {fileID: 1664112832}
+  - component: {fileID: 1664112834}
   m_Layer: 0
   m_Name: wall massage (4)
   m_TagString: Untagged
@@ -9097,7 +9192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &1664112833
 MonoBehaviour:
@@ -9127,6 +9221,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &1664112834
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664112830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1677388086
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9653,6 +9768,7 @@ GameObject:
   - component: {fileID: 1811642557}
   - component: {fileID: 1811642559}
   - component: {fileID: 1811642558}
+  - component: {fileID: 1811642560}
   m_Layer: 0
   m_Name: wall massage (5)
   m_TagString: Untagged
@@ -9687,7 +9803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6908ee5d7ef2d51428aee45f473d2669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DecalReveal
-  revealLight: {fileID: 1959279145}
   fadeSpeed: 2
 --- !u!114 &1811642559
 MonoBehaviour:
@@ -9717,6 +9832,27 @@ MonoBehaviour:
   m_FadeFactor: 0
   version: 1
   m_DecalLayerMask: 1
+--- !u!65 &1811642560
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811642556}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1818282621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10085,7 +10221,7 @@ Transform:
   m_GameObject: {fileID: 1860418100}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.32999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10131,10 +10267,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 0.86019933, b: 0.64716977, a: 1}
-  m_Intensity: 96.02
-  m_Range: 4
-  m_SpotAngle: 97.37806
-  m_InnerSpotAngle: 18.436419
+  m_Intensity: 188.55
+  m_Range: 10.1
+  m_SpotAngle: 178.99998
+  m_InnerSpotAngle: 0
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -10173,7 +10309,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -10304,7 +10440,7 @@ Transform:
   m_GameObject: {fileID: 1904896292}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.32999992, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10350,10 +10486,10 @@ Light:
   serializedVersion: 12
   m_Type: 0
   m_Color: {r: 1, g: 0.86019933, b: 0.64716977, a: 1}
-  m_Intensity: 96.02
-  m_Range: 4
-  m_SpotAngle: 97.37806
-  m_InnerSpotAngle: 18.436419
+  m_Intensity: 188.55
+  m_Range: 10.1
+  m_SpotAngle: 178.99998
+  m_InnerSpotAngle: 0
   m_CookieSize2D: {x: 0.5, y: 0.5}
   m_Shadows:
     m_Type: 0
@@ -10392,7 +10528,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.01
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -11080,6 +11216,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1056796531}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &1990157949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1990157948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1999322791
 PrefabInstance:
   m_ObjectHideFlags: 0

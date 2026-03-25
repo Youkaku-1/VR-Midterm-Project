@@ -841,9 +841,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -885,7 +885,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -980,7 +980,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1349338393}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -5107,7 +5107,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 867105689}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -5292,6 +5292,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 849944851}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &867105689 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 867105688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &870077421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011610838926, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
@@ -5376,7 +5381,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1053862968}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -6027,6 +6032,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 870077428}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &1053862968 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1053862967}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1056796524 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011610838926, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
@@ -6111,7 +6121,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1990157949}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -6892,13 +6902,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185016476}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0051, y: -0.0224, z: -0.0408}
+  m_LocalRotation: {x: -0, y: -0, z: 0.991445, w: -0.13052545}
+  m_LocalPosition: {x: 0.005100012, y: -0.022400022, z: -0.040800095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1349163547}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 195}
 --- !u!1001 &1187272891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8104,6 +8114,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 139913163}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &1349338393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1349338392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1362118103
 GameObject:
   m_ObjectHideFlags: 0
@@ -10395,9 +10410,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -10439,7 +10454,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -10671,9 +10686,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 2
-  m_Color: {r: 0.81568635, g: 0.63529414, b: 0.20392159, a: 1}
-  m_Intensity: 4
-  m_Range: 4
+  m_Color: {r: 0.87169814, g: 0.7266892, b: 0.37992877, a: 1}
+  m_Intensity: 21.03
+  m_Range: 13.25
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -10715,7 +10730,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 6028
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -11191,6 +11206,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1056796531}
   m_SourcePrefab: {fileID: 100100000, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+--- !u!4 &1990157949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5892314713146232162, guid: 51e0c53a1bb69254c8f18c44fe4579d5, type: 3}
+  m_PrefabInstance: {fileID: 1990157948}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1990397012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4529522226813856, guid: 3331088288eda43aa9a4f938f5d75641, type: 3}
